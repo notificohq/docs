@@ -1,0 +1,10 @@
+site_name: Notifico
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  features:
+    - navigation.sections
+dev_addr: 127.0.0.1:8001
+nav:
+  - Home: index.md
+  - Quick start: quick-start.md
