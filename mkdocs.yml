@@ -1,10 +1,7 @@
 site_name: Notifico
 site_url: https://notifico.tech/
-theme:
-  name: material
-  features:
-    - navigation.sections
-dev_addr: 127.0.0.1:8001
+repo_url: https://github.com/notificohq/notifico
+
 nav:
   - index.md
   - Quick start: quick-start.md
@@ -17,6 +14,13 @@ nav:
       - Telegram: channels/telegram.md
       - SMPP (SMS): channels/smpp.md
       - WhatsApp Business: channels/wa_business.md
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+  custom_dir: overrides
+dev_addr: 127.0.0.1:8001
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -25,3 +29,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+extra:
+  analytics:
+    provider: custom
