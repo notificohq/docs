@@ -1,5 +1,7 @@
 # SMPP (Short Message Peer-to-Peer Protocol)
 
+**Channel identifier:** `sms`
+
 SMPP is a protocol used by the telecommunications industry for exchanging SMS messages between Short Message Service Centers (SMSC) and External Short Messaging Entities (ESME).
 
 Many SMS Center services allow SMPP protocol for sending SMS.

@@ -5,20 +5,22 @@ repo_url: https://github.com/notificohq/notifico
 nav:
   - index.md
   - Quick start: quick-start.md
-  - Configuration: configuration.md
   - Pipelines: pipelines.md
+  - Configuration: configuration.md
   - Templates: templates.md
   - API: api.md
   - Channels:
-      - SMTP: channels/smtp.md
-      - Telegram: channels/telegram.md
+      - SMTP (Email): channels/smtp.md
       - SMPP (SMS): channels/smpp.md
+      - Telegram: channels/telegram.md
       - WhatsApp Business: channels/wa_business.md
+      - Slack: channels/slack.md
 
 theme:
   name: material
   features:
     - navigation.sections
+    - navigation.footer
   custom_dir: overrides
 dev_addr: 127.0.0.1:8001
 markdown_extensions:
@@ -29,6 +31,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - md_in_html
 extra:
   analytics:
     provider: custom

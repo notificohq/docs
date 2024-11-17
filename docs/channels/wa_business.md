@@ -1,5 +1,7 @@
 # WhatsApp Business
 
+**Channel identifier:** `whatsapp`
+
 ## Credentials
 To configure a WhatsApp Business bot, add the following section to your `credentials.toml` file:
 

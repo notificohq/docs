@@ -10,7 +10,6 @@ package-mode = false
 python = "^3.12"
 mkdocs-material = "^9.5.42"
 
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

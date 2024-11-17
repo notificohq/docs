@@ -1,5 +1,7 @@
 # Telegram Bot
 
+**Channel identifier:** `telegram`
+
 ## Steps
 ```json
 {

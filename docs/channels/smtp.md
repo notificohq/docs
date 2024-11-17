@@ -1,5 +1,7 @@
 # SMTP (Simple Mail Transfer Protocol)
 
+**Channel identifier:** `email`
+
 ## Steps
 ```json
 {
