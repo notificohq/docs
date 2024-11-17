@@ -1,16 +1,17 @@
-# Telegram
+# Telegram Bot
 
 ## Steps
-```yaml
-- step: telegram.send
-  credential: CREDENTIAL_NAME
+```json
+{
+  "step": "telegram.send",
+  "credential": "CREDENTIAL_NAME"
+}
 ```
 
 ## Template parameters
 - `body` parameter defines the text of Telegram message, sent by the bot.
 ```toml
-[template]
-body = { content = "You have {{ beans_count }} magic beans" }
+body = "You have {{ beans_count }} magic beans"
 ```
 
 ## Credentials
@@ -22,4 +23,4 @@ token = "YOUR_TELEGRAM_BOT_TOKEN"
 ```
 
 Replace `CREDENTIAL_NAME` with a credential name, that will be used for referencing this credential in pipelines (see above).
-Also, replace`YOUR_TELEGRAM_BOT_TOKEN` with your actual Telegram bot token.
+Also, replace`YOUR_TELEGRAM_BOT_TOKEN` with your actual Telegram bot token. You can get a new Telegram bot token from [@BotFather](https://t.me/BotFather).

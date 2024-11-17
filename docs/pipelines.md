@@ -1,6 +1,8 @@
 # Pipelines
 
-Pipelines define how Notifico processes incoming events and sends notifications to different channels. Each pipeline consists of a channel, events, and steps.
+Pipelines define how Notifico processes incoming events and sends notifications to different channels.
+
+Each pipeline consists of a channel, events, and steps.
 
 ### Configuration
 
