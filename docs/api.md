@@ -6,7 +6,7 @@ The main method in Notifico is:
 
 It will create AMQP message, send it to broker, and then run the pipeline for the corresponding event.
 
-```json5
+```json
 {
   "event": "event_name",
   "recipient": {

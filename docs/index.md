@@ -1,9 +1,9 @@
 # What is Notifico
 **Notifico** is an advanced omni-channel notification server.
 
-Decouple your application logic from notification sending routines.
+Notifico is a powerful and flexible notification system that supports a wide range of communication channels, including [email](channels/smtp.md), [SMS](channels/smpp.md), and popular messaging platforms like [Telegram](channels/telegram.md). It provides a unified interface for sending notifications across these diverse channels, allowing you to reach your users through their preferred communication methods. With Notifico, you can easily integrate and manage multiple notification channels within your application, ensuring that your messages are delivered efficiently and effectively to your target audience.
 
-Just a single API call, and you are all set!
+Just a single [API call](api.md), and you are all set!
 
 ## Key concepts
 
