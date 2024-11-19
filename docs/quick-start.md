@@ -59,31 +59,4 @@ This command will download Notifico, start the dependencies and run all the nece
 
 Now, Notifico is up and running and the admin panel will be available here: [http://localhost:8000](http://localhost:8000).
 
-Now, you can create your Event, Template and Pipeline. Read
-
-## Create a template
-
-## Create your first pipeline
-Go to the "Pipelines" section in your admin panel, click "+ Create". Select Project (Default Project), add an event, that you created above, and type `email` in chennel field.
-
-??? example "Screenshot"
-    ![example_create_pipeline.png](example_create_pipeline.png)
-
-Then you can create steps.
-Example steps:
-```json linenums="1"
-[
-  {
-    "step": "templates.load",
-    "templates": ["your_template_name"]
-  },
-  {
-    "step": "smtp.send",
-    "credential": "mail1"
-  }
-]
-```
-
-The editor is not convenient right now, we will replace it with a simple JSON editor in the following releases.
-
-Now, you can trigger the event.
+Now, you can create your Event, Template and Pipeline.

@@ -57,9 +57,10 @@ To create a pipeline in Notifico, you can use the admin panel, which provides a 
         The JSON editor is not very convenient right now. A new editor will be available in the following releases.
 
 4. **Save the Pipeline**:
-      - Once you have configured all the necessary components, save the pipeline.
+      - Once you have configured all the necessary parts, save the pipeline.
       - The pipeline will now be active and ready to process events as per your configuration.
 
 ![example_create_pipeline.png](example_create_pipeline.png)
 
-By following these steps, you can efficiently create and manage pipelines to handle various notification workflows in Notifico. The screenshot above provides a visual example of the pipeline creation interface in the admin panel.
+By following these steps, you can efficiently create and manage pipelines to handle various notification workflows in Notifico.
+The screenshot above provides a visual example of the pipeline creation interface in the admin panel.
