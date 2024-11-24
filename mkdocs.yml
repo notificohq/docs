@@ -23,7 +23,7 @@ theme:
     - navigation.sections
     - navigation.footer
   custom_dir: overrides
-dev_addr: 127.0.0.1:8001
+dev_addr: 127.0.0.1:8080
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true

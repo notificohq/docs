@@ -59,4 +59,4 @@ This command will download Notifico, start the dependencies and run all the nece
 
 Now, Notifico is up and running and the admin panel will be available here: [http://localhost:8000](http://localhost:8000).
 
-Now, you can create your Event, Template and Pipeline.
+Now, you can create your [Event, Template and Pipeline](pipelines.md).
