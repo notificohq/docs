@@ -19,6 +19,7 @@ nav:
       - Telegram: plugins/telegram.md
       - WhatsApp Business: plugins/wa_business.md
       - Slack: plugins/slack.md
+      - Pushover: plugins/pushover.md
 
 theme:
   name: material
