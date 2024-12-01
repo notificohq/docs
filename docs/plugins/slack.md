@@ -2,10 +2,10 @@
 
 **Channel identifier:** `slack`
 
-## Steps
+## Step: `slack.send`
 ```json
 {
-  "step": "telegram.send",
+  "step": "slack.send",
   "credential": "CREDENTIAL_NAME"
 }
 ```

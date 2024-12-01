@@ -1,4 +1,4 @@
-# Templates
+# Template
 
 Templates are used to transform machine-readable event into a human-readable message, sent to a recipient.
 We use [minijinja](https://github.com/mitsuhiko/minijinja) library for rendering templates.

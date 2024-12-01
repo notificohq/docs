@@ -1,4 +1,4 @@
-# Pipelines
+# Pipeline
 
 A pipeline in Notifico is a structured sequence of operations that processes incoming events and sends notifications to specified channels.
 It acts as a workflow that defines how data flows through the system, from the moment an event is triggered to the final delivery of a notification.

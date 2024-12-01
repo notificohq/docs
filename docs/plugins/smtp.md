@@ -2,7 +2,7 @@
 
 **Channel identifier:** `email`
 
-## Steps
+## Step: `smtp.send`
 ```json
 {
   "step": "smtp.send",

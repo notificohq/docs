@@ -5,17 +5,20 @@ repo_url: https://github.com/notificohq/notifico
 nav:
   - index.md
   - quick-start.md
-  - Pipelines: pipelines.md
-  - Configuration: configuration.md
-  - Templates: templates.md
-  - API: api.md
   - components.md
-  - Channels:
-      - SMTP (Email): channels/smtp.md
-      - SMPP (SMS): channels/smpp.md
-      - Telegram: channels/telegram.md
-      - WhatsApp Business: channels/wa_business.md
-      - Slack: channels/slack.md
+  - Configuration: configuration.md
+  - Entities:
+    - pipeline.md
+    - template.md
+    - recipient.md
+  - API: api.md
+  - Plugins and Steps:
+      - Core: plugins/core.md
+      - SMTP (Email): plugins/smtp.md
+      - SMPP (SMS): plugins/smpp.md
+      - Telegram: plugins/telegram.md
+      - WhatsApp Business: plugins/wa_business.md
+      - Slack: plugins/slack.md
 
 theme:
   name: material

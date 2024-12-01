@@ -7,7 +7,7 @@ Notifico consists of several key components that work together to provide its fu
 The "worker" component is responsible for processing messages from the AMQP (Advanced Message Queuing Protocol) queue. Its main functions include:
 
 - Reading messages from the AMQP queue
-- Running the [Pipelines](pipelines.md)
+- Running the [Pipelines](pipeline.md)
 - Sending the processed messages to different services as required
 
 This component plays a crucial role in handling the asynchronous processing of notifications and ensures efficient distribution of workload.
