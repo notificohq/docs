@@ -1,4 +1,4 @@
-# Telegram Bot
+# Pushover
 
 **Channel identifier:** `pushover`
 
