@@ -12,11 +12,20 @@ All these variables can be passed to executables as command-line arguments (see 
 | NOTIFICO_HTTP_INGEST_BIND | :material-check: | Local address for [ingest](components.md#ingest) service.                                                                                    |
 | NOTIFICO_WEB_BIND         | :material-check: | Local address for [web](components.md#web) service.                                                                                          |
 | NOTIFICO_USERAPI_BIND     | :material-check: | Local address for [userapi](components.md#user-api) service.                                                                                 |
-| NOTIFICO_USERAPI_URL      | :material-check: | User-facing address for userapi service                                                                                                      |
-| NOTIFICO_CREDENTIALS_PATH |                  | Default: `/var/lib/notifico/credentials.toml`                                                                                                |
+| NOTIFICO_USERAPI_URL      | :material-check: | User-facing address for userapi service                                                                                                      | |
 
 ## Credentials
 
-Credentials are stored in TOML format. You can add as many configurations as you need for different services.
+Credentials in Notifico are set using environment variables. The format for setting credentials is as follows:
 
-See channels documentation for credential format.
+```shell
+NOTIFICO_CRED_<NAME>=<TRANSPORT>:<VALUE>
+```
+
+Where:
+
+- `<NAME>` is the name of the credential. This name is converted into lowercase.
+- `<TRANSPORT>` is the transport name
+- `<VALUE>` is the actual credential value
+
+For more detailed information about credential formats and their usage with specific plugins, please refer to the [Plugins](plugins/core.md) section of the documentation.

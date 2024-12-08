@@ -1,6 +1,10 @@
 # Slack
 
-**Channel identifier:** `slack`
+**Contact:** `slack:CHANNEL_ID`
+
+**Credential:** `slack:API_TOKEN`
+
+**Channel:** `slack`
 
 ## Step: `slack.send`
 ```json

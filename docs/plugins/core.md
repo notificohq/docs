@@ -1,6 +1,7 @@
 # Core plugin
 
-## Step: `core.set_recipients`
+## Steps
+### Step: `core.set_recipients`
 
 ```json
 {
@@ -16,7 +17,6 @@
 
 Where `RECIPIENT` is a recipient entity. See [Recipient](../recipient.md) for more info.
 
-### How this works under hood:
+## How this works under hood
 The Pipeline is forked in the runtime, preserving the current pipeline context.
-The forked pipelines start from the following step. This step creates a pipeline for every contact, matching current
-pipeline's channel for every recipient, resulting in `Recipients * Contacts` pipelines.
+The forked pipelines start from the following step. This step creates a pipeline for every recipient, resulting in `Recipients` pipelines.

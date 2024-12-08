@@ -3,29 +3,32 @@ site_url: https://notifico.tech/
 repo_url: https://github.com/notificohq/notifico
 
 nav:
-  - index.md
+  - Overview:
+    - index.md
+    - components.md
+    - Entities:
+      - pipeline.md
+      - template.md
+      - recipient.md
   - quick-start.md
-  - components.md
   - Configuration: configuration.md
-  - Entities:
-    - pipeline.md
-    - template.md
-    - recipient.md
+  - Plugins:
+    - Core: plugins/core.md
+    - SMTP (Email): plugins/smtp.md
+    - SMPP (SMS): plugins/smpp.md
+    - Telegram: plugins/telegram.md
+    - WhatsApp Business: plugins/waba.md
+    - Slack: plugins/slack.md
+    - Pushover: plugins/pushover.md
   - API: api.md
-  - Plugins and Steps:
-      - Core: plugins/core.md
-      - SMTP (Email): plugins/smtp.md
-      - SMPP (SMS): plugins/smpp.md
-      - Telegram: plugins/telegram.md
-      - WhatsApp Business: plugins/wa_business.md
-      - Slack: plugins/slack.md
-      - Pushover: plugins/pushover.md
+  - NotificoX: notificox.md
 
 theme:
   name: material
   features:
     - navigation.sections
     - navigation.footer
+    - navigation.tabs
   custom_dir: overrides
 dev_addr: 127.0.0.1:8080
 markdown_extensions:
