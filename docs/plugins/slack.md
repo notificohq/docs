@@ -37,11 +37,9 @@ To set up the Slack channel for Notifico, follow these steps:
       - Copy the "Bot User OAuth Token" (it starts with `xoxb-`)
 
 5. **Add the Token to Notifico:**
-      - Open your `credentials.toml` file
-      - Add a new entry for Slack using this format:
-        ```toml
-        [slack.YOUR_CREDENTIAL_NAME]
-        token = "xoxb-your-token-here"
+      - Add a new environment variable for Slack using this format:
+        ```shell
+        NOTIFICO_CRED_YOUR_CREDENTIAL_NAME="xoxb-your-token-here"
         ```
       - Replace `YOUR_CREDENTIAL_NAME` with a meaningful name for this Slack connection
       - Paste your OAuth token in place of `xoxb-your-token-here`

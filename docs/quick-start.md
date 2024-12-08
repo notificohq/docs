@@ -3,24 +3,20 @@ The fastest way to deploy Notifico is Docker. We will use RabbitMQ as an AMQP br
 
 Run in your terminal
 ```shell
-$ git clone https://github.com/notificohq/notifico-example.git
-$ cd notifico-example
+$ curl -o docker-compose.yml https://raw.githubusercontent.com/notificohq/notifico/refs/heads/main/examples/docker-compose.simple.yml
 ```
 
 ## Configure your credentials
-First, you need to create a credential file that will provide all the necessary credentials.
-In this example, we use SMTP server, because it is the easiest to configure.
+First, you need to set all the necessary service credentials.
+In this example, we use SMTP server because it is the easiest to configure.
 
-Open a file named `credentials.toml` in example directory and replace SMTP credentials with yours:
+Open `docker-compose.yml`, that you have just downloaded and replace SMTP credentials with yours:
 
-```toml
-[smtp.mail1]
-tls = true  # The flag indicating whether to use TLS (STARTTLS is supported, too)
-host = "smtp.example.com"  # The address of your SMTP server.
-port = 587  # The port number used by your SMTP server (commonly 25, 465, or 587).
-username = "your_username@example.com"  # The username for authenticating with the SMTP server.
-password = "your_password"  # The password associated with the SMTP username.
+```yaml
+NOTIFICO_CRED_MAIL1: smtp:YOUR_SMTP_USERNAME:YOUR_SMTP_PASSWORD@YOUR_SMTP_SERVER:587?tls=true
 ```
+
+If your SMTP username contains "@" sign, replace it with %40. All other characters must be urlencoded as well.
 
 ??? example "Example for Gmail"
     To use your Google account with SMTP, especially when using third-party applications like Notifico,
@@ -37,16 +33,11 @@ password = "your_password"  # The password associated with the SMTP username.
         - Enter a new name for your App Password, for example `Notifico`.
         - Google will provide you with a 16-character password. This is your App Password.
     3. **Use the App Password:**
-    Replace the password field in your credentials.toml file with the App Password you just generated.
+    Replace the password field in your NOTIFICO_CRED_MAIL1 variable with the App Password you just generated.
     It should look something like this:
 
-    ```toml
-    [smtp.mail1]
-    tls = true
-    host = "smtp.gmail.com"
-    port = 587
-    username = "your_username@gmail.com"
-    password = "your_app_password_here"
+    ```yaml
+    NOTIFICO_CRED_MAIL1: smtp:your_username%40gmail.com:your_app_password_here@smtp.gmail.com:587?tls=true
     ```
 
 ## Run using docker compose

@@ -28,6 +28,14 @@ notificox send --channel <CHANNEL> --template <TEMPLATE> <CREDENTIAL> [CONTACTS]
 This command internally constructs a Notifico [pipeline](pipeline.md) and executes it using the embedded pipeline engine.
 This process is fully transparent to end user.
 
+### Example
+```shell
+# Send a Telegram notification to recipient with chat_id=111579711 using telegram token
+notificox send --channel telegram --template "{body: 'my notification body'}" \
+    "telegram:TOKENTOKEN:TOKENTOKENTOKENTOKENTOKENTOKENTOKEN" \
+    "telegram:111579711"
+```
+
 ## Trigger an event on remote Notifico Ingest service
 **Usage:**
 ```shell

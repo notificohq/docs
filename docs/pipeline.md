@@ -36,7 +36,7 @@ Steps define the actions to be performed in each pipeline. In the example above,
 ### Credentials
 
 - Credentials are used to authenticate with external services required by the pipeline, such as email servers or messaging APIs.
-- They are defined separately in a credentials.toml file, and referenced in the pipeline configuration to ensure secure communication with external systems.
+- They are defined separately using environment variables, and referenced in the pipeline configuration to ensure secure communication with external systems.
 
 ## Creating a Pipeline
 

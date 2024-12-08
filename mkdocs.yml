@@ -14,12 +14,14 @@ nav:
   - Configuration: configuration.md
   - Plugins:
     - Core: plugins/core.md
-    - SMTP (Email): plugins/smtp.md
-    - SMPP (SMS): plugins/smpp.md
-    - Telegram: plugins/telegram.md
-    - WhatsApp Business: plugins/waba.md
-    - Slack: plugins/slack.md
-    - Pushover: plugins/pushover.md
+    - Transports:
+      - SMTP (Email): plugins/smtp.md
+      - SMPP (SMS): plugins/smpp.md
+      - plugins/gotify.md
+      - plugins/pushover.md
+      - plugins/slack.md
+      - plugins/telegram.md
+      - plugins/waba.md
   - API: api.md
   - NotificoX: notificox.md
 
