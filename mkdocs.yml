@@ -23,6 +23,8 @@ nav:
   - API: api.md
   - NotificoX: notificox.md
 
+plugins:
+  - swagger-ui-tag
 theme:
   name: material
   features:

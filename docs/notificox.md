@@ -20,7 +20,7 @@ notificox send --channel <CHANNEL> --template <TEMPLATE> <CREDENTIAL> [CONTACTS]
 
 **Where:**
 
-- CHANNEL: the channel of notification. You can find relevant channels in [PLugins](plugins/core.md) section of this documentation.
+- CHANNEL: the channel of notification. You can find relevant channels in [Plugins](plugins/core.md) section of this documentation.
 - TEMPLATE: JSON5-formatted message template object. Template parameters are channel-specific.
 - CREDENTIAL: string-formatted transport credential
 - CONTACTS: zero or more contacts to send the message. Contact format is transport-specific. Some channels, like Gotify don't require contacts, as they only use credentials to send.
