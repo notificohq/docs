@@ -3,9 +3,10 @@
 - **Credential:** `pusoover:API_TOKEN`
 
 ## Template parameters
-```yaml
-body: "Template {{ parameter }}" # body of Pushover message
-title: "Title" # title, displayed in Push notification
+```toml
+[parts]
+body = "Template {{ parameter }}" # body of Pushover message
+title = "Title" # title, displayed in Push notification
 ```
 
 ## Steps

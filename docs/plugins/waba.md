@@ -1,3 +1,3 @@
 # WhatsApp Business
-- **Contact:** `mobile_phone:PHONE`
+- **Contact:** `tel:PHONE`
 - **Credential:** `waba:PHONE_ID:TOKEN`

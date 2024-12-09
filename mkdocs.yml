@@ -18,12 +18,13 @@ nav:
       - SMTP (Email): plugins/smtp.md
       - SMPP (SMS): plugins/smpp.md
       - plugins/gotify.md
+      - plugins/ntfy.md
       - plugins/pushover.md
       - plugins/slack.md
       - plugins/telegram.md
       - plugins/waba.md
   - API: api.md
-  - NotificoX: notificox.md
+  - notificox.md
 
 plugins:
   - swagger-ui-tag

@@ -19,10 +19,6 @@ This feature provides flexibility and control over how notifications are handled
 Notifications are messages that are sent to users or systems to inform them of events, updates, or actions that require their attention.
 Notifico allows you to send notifications through various channels such as email, SMS, and messengers.
 
-### Channels
-Channels are the mediums through which notifications are delivered. Notifico supports multiple channels, enabling you to reach your users wherever they are.
-You can configure and manage these channels to suit your application's needs.
-
 ### Templates
 Templates are predefined formats for your notifications. They allow you to maintain consistency in your messaging and save time by reusing common structures.
 Notifico supports dynamic content in templates, enabling personalized notifications.
