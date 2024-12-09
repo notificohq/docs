@@ -1,10 +1,6 @@
 # Pushover
-
-**Contact:** `pushover:USER_KEY`
-
-**Credential:** `pusoover:API_TOKEN`
-
-**Channel:** `pushover`
+- **Contact:** `pushover:USER_KEY`
+- **Credential:** `pusoover:API_TOKEN`
 
 ## Template parameters
 ```yaml

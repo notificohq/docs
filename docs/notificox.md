@@ -15,15 +15,14 @@ Some arguments are formatted in [JSON5](https://json5.org/), so they can be ente
 ## Send notification locally
 **Usage:**
 ```shell
-notificox send --channel <CHANNEL> --template <TEMPLATE> <CREDENTIAL> [CONTACTS]...
+notificox send <CREDENTIAL> [CONTACTS]... --template <TEMPLATE>
 ```
 
 **Where:**
 
-- CHANNEL: the channel of notification. You can find relevant channels in [Plugins](plugins/core.md) section of this documentation.
-- TEMPLATE: JSON5-formatted message template object. Template parameters are channel-specific.
-- CREDENTIAL: string-formatted transport credential
-- CONTACTS: zero or more contacts to send the message. Contact format is transport-specific. Some channels, like Gotify don't require contacts, as they only use credentials to send.
+- TEMPLATE: JSON5-formatted message template object. Template parameters are transport-specific. You can read about template parameters in [Plugins](plugins/core.md) section. Most of the transports require only "body" parameter to be set.
+- CREDENTIAL: Transport credential. You can read about transport syntax in [Plugins](plugins/core.md) section.
+- CONTACTS: zero or more contacts to send the message. Contact format is transport-specific. Some transports, like Gotify, don't require contacts, as they only use credentials to send.
 
 This command internally constructs a Notifico [pipeline](pipeline.md) and executes it using the embedded pipeline engine.
 This process is fully transparent to end user.
@@ -31,7 +30,7 @@ This process is fully transparent to end user.
 ### Example
 ```shell
 # Send a Telegram notification to recipient with chat_id=111579711 using telegram token
-notificox send --channel telegram --template "{body: 'my notification body'}" \
+notificox send --template "{body: 'my notification body'}" \
     "telegram:TOKENTOKEN:TOKENTOKENTOKENTOKENTOKENTOKENTOKEN" \
     "telegram:111579711"
 ```

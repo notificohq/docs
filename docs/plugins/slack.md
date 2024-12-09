@@ -1,12 +1,9 @@
 # Slack
+- **Contact:** `slack:CHANNEL_ID`
+- **Credential:** `slack:API_TOKEN`
 
-**Contact:** `slack:CHANNEL_ID`
-
-**Credential:** `slack:API_TOKEN`
-
-**Channel:** `slack`
-
-## Step: `slack.send`
+## Steps
+### Step: `slack.send`
 ```json
 {
   "step": "slack.send",
@@ -45,7 +42,6 @@ To set up the Slack channel for Notifico, follow these steps:
       - Paste your OAuth token in place of `xoxb-your-token-here`
 
 6. **Use in Notifico:**
-      - When configuring Notifico steps, use `slack` as the channel identifier
       - Reference your credential name in the step configuration
 
 Now your Slack channel is ready to use!

@@ -48,7 +48,7 @@ To create a pipeline in Notifico, you can use the admin panel, which provides a 
 
 2. **Create a New Pipeline**:
       - Click on the "+ Create" button to start a new pipeline configuration.
-      - You will be prompted to enter details for your pipeline, including the channel, events, and steps.
+      - You will be prompted to enter details for your pipeline, including the events, and steps.
 
 3. **Configure the Pipeline**:
       - **Select a Channel**: Choose the channel through which notifications will be sent. This could be email, SMS, or any other supported platform.

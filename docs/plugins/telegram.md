@@ -1,10 +1,6 @@
 # Telegram Bot
-
-**Contact:** `telegram:CHAT_ID`
-
-**Credential:** `telegram:TOKEN`
-
-**Channel:** `telegram`
+- **Contact:** `telegram:CHAT_ID`
+- **Credential:** `telegram:TOKEN`
 
 ## Steps
 ### Step: `telegram.send`

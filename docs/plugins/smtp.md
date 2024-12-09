@@ -1,10 +1,6 @@
 # SMTP (Simple Mail Transfer Protocol)
-
-**Contact:** `email:EMAIL`
-
-**Credential:** `smtp:USERNAME:PASSWORD@HOST:PORT`, `smtp:USERNAME:PASSWORD@HOST:PORT?tls=true`
-
-**Channel:** `email`
+- **Contact:** `email:EMAIL`
+- **Credential:** `smtp:USERNAME:PASSWORD@HOST:PORT`, `smtp:USERNAME:PASSWORD@HOST:PORT?tls=true`
 
 ## Steps
 ### Step: `smtp.send`
